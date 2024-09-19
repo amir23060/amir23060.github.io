@@ -15,6 +15,17 @@ body {
   mix-blend-mode: overlay;
   margin: 10px;
 }
+#search {
+  color: black;
+}
+.margin5 {
+  margin: 5px;
+  font-size: larger;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  padding-right: 1px;
+}
 
 .upper {
   width: 100%;
