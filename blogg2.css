@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+}
+.coverpage {
+  height: 100px;
+  width: 100%;
+  position: relative;
+}
+.coverpage img {
+  height: 60px;
+  width: 200px;
+  position: absolute;
+  left: 42%;
+  background-size: cover;
+  mix-blend-mode: overlay;
+  margin: 10px;
+}
+
+.upper {
+  width: 100%;
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 60px;
+  border: 1px solid white;
+  box-shadow: 3px 10px 3px 10px white;
+}
+.info {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+.right {
+  position: absolute;
+  right: 10px;
+  top: 20%;
+}
+.info a {
+  color: black;
+}
+
+.innehåll {
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+}
+#sidor {
+  flex: 2;
+}
+.mitten {
+  flex: 10;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.column1 {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+.column2 {
+  flex: 1;
+
+  display: flex;
+  flex-direction: row;
+}
+.bild1 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text1 {
+  flex: 3;
+}
+.text2 {
+  flex: 3;
+
+  padding: 5px;
+}
+.bild2 {
+  flex: 1;
+  position: relative;
+}
+.bild2 img {
+  border-radius: 3px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  margin: 2px;
+  height: 150px;
+  width: 200px;
+}
