@@ -103,9 +103,6 @@ body {
 .bild1 img {
   height: 400px;
 }
-.text1 :hover {
-  font-weight: bold;
-}
 
 .text1 {
   flex: 3;
