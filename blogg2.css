@@ -1,20 +1,21 @@
 body {
   margin: 0;
+  position: relative;
 }
 .coverpage {
   height: 100px;
   width: 100%;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 .coverpage img {
   height: 60px;
-  width: 200px;
-  position: absolute;
-  left: 42%;
-  background-size: cover;
-  mix-blend-mode: overlay;
+  width: 300px;
+
   margin: 10px;
 }
+
 #search {
   color: black;
 }
@@ -34,59 +35,78 @@ body {
   flex-direction: row;
   position: relative;
   height: 60px;
-  border: 1px solid white;
-  box-shadow: 3px 10px 3px 10px white;
 }
 .info {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0%;
-  padding: 5px;
+  padding: 8px;
   display: flex;
   align-items: center;
+  font-size: large;
 }
 .right {
   position: absolute;
   right: 10px;
-  top: 20%;
 }
 .info a {
   color: black;
+}
+.info :hover {
+  color: red;
+  font-size: larger;
 }
 
 .innehåll {
   display: flex;
   flex-direction: row;
-  height: 600px;
+  height: 2300px;
+  margin-top: 10px;
 }
+
 #sidor {
-  flex: 2;
-}
-.mitten {
-  flex: 10;
+  flex: 3;
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
+}
+.mitten {
+  flex: 14;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
   margin-right: 10px;
 }
 .column1 {
   display: flex;
   flex-direction: row;
-  flex: 1;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  flex: 5;
+
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #9adfe8;
 }
 .column2 {
-  flex: 1;
-
+  flex: 2;
+  border: 1px 0 1px 0 solid black;
+  margin-top: 2px;
+}
+.column3 {
+  flex: 5;
+  border: 1px solid black;
   display: flex;
   flex-direction: row;
+  background-color: #4b7f63;
+  padding: 10px;
 }
 .bild1 {
   flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
+.bild1 img {
+  height: 400px;
+}
+.text1 :hover {
+  font-weight: bold;
+}
+
 .text1 {
   flex: 3;
 }
@@ -100,11 +120,67 @@ body {
   position: relative;
 }
 .bild2 img {
-  border-radius: 3px;
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
-  margin: 2px;
-  height: 150px;
+  height: 450px;
   width: 200px;
+}
+.under {
+  width: 100%;
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+.column4 {
+  flex: 1;
+}
+.column5 {
+  flex: 5;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #fcc400;
+}
+.column6 {
+  flex: 5;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #b3acd9;
+}
+.float {
+  float: right;
+}
+.bild3 {
+  flex: 1;
+}
+.bild3 img {
+  height: 450px;
+  width: 300px;
+}
+
+.text3 {
+  flex: 3;
+}
+.font {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: larger;
+}
+
+.sida1 {
+  flex: 1;
+}
+.sida2 {
+  flex: 2;
+}
+.box {
+  margin: 0 10px 5px 10px;
+  border: 2px solid black;
+  height: 250px;
+  border-radius: 20%;
+  background-color: beige;
 }
