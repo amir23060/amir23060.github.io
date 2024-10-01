@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+}
+.navbar {
+  width: 100%;
+  background-color: gainsboro;
+  position: relative;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.navbar a {
+  color: black;
+  font-size: large;
+  padding: 10px;
+}
+.navbar a:hover {
+  color: red;
+}
+.kroppen {
+  display: flex;
+  flex-direction: row;
+  height: 1300px;
+}
+#sidor {
+  flex: 3;
+}
+
+.bild {
+  flex: 1;
+  text-align: center;
+}
+.text {
+  flex: 4;
+  padding: 30px;
+  font-size: x-large;
+}
+.fotter {
+  width: 100%;
+  background-color: gainsboro;
+  position: relative;
+  display: flex;
+  height: 60px;
+  align-items: center;
+}
+.fotter a {
+  padding: 10px;
+  color: black;
+}
+.right {
+  position: absolute;
+  right: 10px;
+}
+.box {
+  margin: 20px 10px 5px 10px;
+  border: 2px solid black;
+  height: 250px;
+  border-radius: 20%;
+  background-color: beige;
+}
+.författare {
+  height: 200px;
+}
+.about {
+  margin: 3px;
+  width: 50%;
+  border: 1px solid black;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+}
+#namn {
+  flex: 1;
+  background-color: ghostwhite;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.om {
+  flex: 3;
+  padding: 5px;
+  border-top: 1px solid black;
+}
+@media (max-width: 450px) {
+  .kroppen {
+    flex-direction: column;
+  }
+
+  .about {
+    width: 100%;
+  }
+
+  .text,
+  .bild {
+    flex: 1;
+  }
+  .box {
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+  }
+}
